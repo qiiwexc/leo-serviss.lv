@@ -1,0 +1,88 @@
+html {
+  background: #666 no-repeat center center fixed;
+  background-image: url('/remont-tv-lcd.jpg');
+  background-size: cover;
+}
+
+p {
+  font-size: 17px;
+}
+
+.hidden {
+  display: none;
+}
+
+.map {
+  border: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.margin {
+  margin-left: 20px;
+  margin-right: -20px;
+}
+
+.min-height {
+  min-height: 200px;
+}
+
+.row {
+  min-height: 150px;
+}
+
+/* resize main header on small screens */
+@media screen and (max-width: 390px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+/* resize contacts on the edge between medium and large screen */
+@media screen and (min-width: 990px) and (max-width: 1030px) {
+  h5 a {
+    font-size: 22px;
+  }
+}
+
+/* resize contacts on the edge between small and medium screen */
+@media screen and (min-width: 600px) and (max-width: 620px) {
+  h5 a {
+    font-size: 22px;
+  }
+}
+
+/* underline contacts on mobile phones to highlight that those are clickable */
+@media screen and (max-width: 600px) {
+  h5 a {
+    border-bottom: 1px dotted;
+  }
+}
+
+/*
+ * Resize language buttons on small smartphone screens - up to 380px wide (iPhones up to 5s including)
+ */
+
+@media screen and (max-width: 340px) {
+  .language {
+    padding: 0 14px;
+  }
+}
+
+@media screen and (min-width: 340px) and (max-width: 360px) {
+  .language {
+    padding: 0 18px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 380px) {
+  .language {
+    padding: 0 24px;
+  }
+}
+
+/* compatibility with Internet Explorer (and other browsers that don't support HTML5)*/
+footer,
+nav {
+  display: block;
+}
